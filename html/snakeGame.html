@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport", content="width=device-width, initial-scale=1.0">
+	<title>Snake Game with Hybried Games</title>
+	<link rel="stylesheet" href="/css/snakeGame.css">
+	<link rel="shortcut icon" type="image/jpg" href="/images/snake.png"/>
+	<link rel="stylesheet" href="/css/fontawesome-free-5.15.2-web/css/all.css">
+	<link rel="stylesheet" href="/css/bootstrap.css">
+	<title>Snake Game</title>
+</head>
+
+<body>
+	<btt class="dposf" style="right: 5vw; bottom: 5vh;z-index: 5">
+        <div class="p-1 dbor15 dflex bg3">
+            <i onclick="darkMode()" class="fas fa-moon p-2 dbtn" id="themeToggler" title="toggle theme"></i>
+        </div>
+    </btt>
+	<h1>Snake Game with
+		<div class="Hybried">Hybried Games</div>
+	</h1>
+	<canvas id="board"></canvas>
+	<div id="tryAgain">
+		<button onclick="retry()" class="mainbtn">Retry</button>
+	</div>
+</body>
+<script src="/js/snakeGame.js"></script>
+<script>
+	function retry() {
+		window.location.reload();
+	}
+	function darkMode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+</script>
+
+</html>
